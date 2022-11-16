@@ -18,7 +18,7 @@ const ReferAndEarn = () => {
           </div>
           <div className="grid-item-2 grid-item">
             <div className="RE">Total Referrals</div>
-            <div className="amount-7">7</div>
+            <div className="amount">7</div>
           </div>
           <div className="grid-item-3 grid-item">
             <div className="RE">Wallet Balance</div>
