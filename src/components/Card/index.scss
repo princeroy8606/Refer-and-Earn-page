@@ -22,7 +22,6 @@
     font-weight: 400;
     font-size: 1rem;
     margin: 0.6rem 0rem;
-
   }
 
   .course-wrap {
@@ -45,15 +44,15 @@
       border-radius: 1rem;
     }
     &::-webkit-scrollbar-track-piece:end {
-      margin-bottom: 2rem; 
-  }
-  
-  &::-webkit-scrollbar-track-piece:start {
+      margin-bottom: 2rem;
+    }
+
+    &::-webkit-scrollbar-track-piece:start {
       margin-top: 1rem;
-  }
+    }
 
     .courses-container {
-      margin:  0.25rem 0.6rem;
+      margin: 0.25rem 0.6rem;
       width: fit-content;
       padding: 0.23rem;
       border: 1.5px solid rgba(238, 174, 174, 1);
@@ -75,25 +74,37 @@
   }
 }
 
-@media screen and (max-width:700px) {
-    .card{
-      min-width: auto;
-      height: auto;
-      padding: 1rem;
-      
-      .course-wrap{        
-        margin: 0.25rem 0rem 1rem 0rem;
-        &::-webkit-scrollbar{
-          width: .2rem;
-          height: .2rem;
-        }
-        .courses-container{
-          padding: 0.15rem;
+@media screen and (max-width: 700px) {
+  .card {
+    min-width: auto;
+    height: auto;
+    padding: 1rem;
+    .card-name-date{
+      .name{
+        font-size: 1rem;
+      }
 
-        }
+      .date{
+        font-size: 1rem;
       }
     }
-
-    
-
+    .course-wrap {
+      margin: 0.25rem 0rem 1rem .5rem;
+      &::-webkit-scrollbar {
+        width: 0.2rem;
+        height: 0.2rem;
+      }
+      .courses-container {
+        padding: 0.15rem;
+        margin: 0.5rem 0.5rem 0rem 0rem;
+        font-size: 1rem;
+      }
+    }
+    .amount{
+      font-size: 1rem;
+      span{
+        font-size: 1.5rem;
+      }
+    }
+  }
 }

@@ -8,8 +8,9 @@
     margin: 1rem 0rem;
     .backlink-txt {
       padding: 0.5rem;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 1rem;
+      color: var(--violet);
     }
   }
   font-family: var(--font-family);
@@ -46,19 +47,22 @@
     }
     .wallet-balance-container {
       width: 9.5rem;
-      height: 5.3rem;
+      height: auto;
       border-radius: 1rem;
       box-shadow: 1px 1px 10px rgb(216, 215, 215);
       font-weight: 500;
       font-size: 1rem;
       cursor: pointer;
-      .wallet-balance-txt {
-        padding: 1.25rem 0 0 1rem;
-        color: var(--violet);
-      }
-      .wallet-balance {
-        padding: 0.2rem 0 0 1rem;
-        color: black;
+      .wallet-balance-txt-container{
+        // background: red;
+        
+        padding: 1.25rem 0rem 0 1rem;
+        .wallet-balance-txt {
+          color: var(--violet);
+        }
+        .wallet-balance {
+          color: black;
+        }
       }
     }
   }
@@ -71,7 +75,6 @@
       font-weight: 600;
       span {
         font-weight: 400;
-        color: gray;
       }
     }
     .card-wrap {
@@ -87,6 +90,7 @@
     font-size: 1rem;
     color: var(--violet);
     .terms {
+      padding-bottom: 1.5rem;
       cursor: pointer;
     }
   }
@@ -103,10 +107,11 @@
         padding: 0;
       }
       .wallet-balance-container {
-        padding: 0;
-        width: auto;
-        margin-left: 1rem;
+        width: fit-content;
+        .wallet-balance-txt-container{          
+          padding: 1.25rem .2rem 0 .5rem;
       }
+    }
     }
     .card-wrap {
       padding: 0;

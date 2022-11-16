@@ -59,8 +59,10 @@ const EnrolledFriends = () => {
           </div>
         </div>
         <div className="wallet-balance-container">
+          <div className="wallet-balance-txt-container">
           <div className="wallet-balance-txt">Wallet Balance</div>
           <div className="wallet-balance">₹ 500</div>
+          </div>
         </div>
       </div>
       <div className="card-box">
