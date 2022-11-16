@@ -154,6 +154,7 @@
     font-size: 1rem;
     color: var(--violet);
     .terms {
+      padding-bottom: 1.5rem;
       cursor: pointer;
     }
   }
@@ -222,11 +223,3 @@
   }
 }
 
-// @media screen and (max-width: 1300px) {
-//   .RAE-card-grid {
-//     .grid-item-4 {
-//       width: auto;
-//       height: 3rem;
-//     }
-//   }
-// }
