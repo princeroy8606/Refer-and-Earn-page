@@ -1,0 +1,99 @@
+.card {
+  height: 16.2rem;
+  min-width: 26.3rem;
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  background: var(--gradient-color);
+  color: white;
+
+  .card-name-date {
+    display: flex;
+    justify-content: space-between;
+    .name {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    .date {
+      font-weight: 400;
+      font-size: 1.1rem;
+    }
+  }
+  .courses-enrolled {
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0.6rem 0rem;
+
+  }
+
+  .course-wrap {
+    max-height: 5.66rem;
+    width: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0rem 3rem 0rem;
+    font-weight: 400;
+    font-size: 1.05rem;
+    box-sizing: border-box;
+
+    &::-webkit-scrollbar {
+      width: 0.3rem;
+      display: block;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(238, 174, 174, 1);
+      border-radius: 1rem;
+    }
+    &::-webkit-scrollbar-track-piece:end {
+      margin-bottom: 2rem; 
+  }
+  
+  &::-webkit-scrollbar-track-piece:start {
+      margin-top: 1rem;
+  }
+
+    .courses-container {
+      margin:  0.25rem 0.6rem;
+      width: fit-content;
+      padding: 0.23rem;
+      border: 1.5px solid rgba(238, 174, 174, 1);
+      border-radius: 1.25rem;
+      .course {
+        padding: 0rem 0.2rem;
+      }
+    }
+  }
+}
+
+.amount {
+  font-weight: 400;
+  font-size: 1.1rem;
+
+  span {
+    font-weight: 600;
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width:700px) {
+    .card{
+      min-width: auto;
+      height: auto;
+      padding: 1rem;
+      
+      .course-wrap{        
+        margin: 0.25rem 0rem 1rem 0rem;
+        &::-webkit-scrollbar{
+          width: .2rem;
+          height: .2rem;
+        }
+        .courses-container{
+          padding: 0.15rem;
+
+        }
+      }
+    }
+
+    
+
+}

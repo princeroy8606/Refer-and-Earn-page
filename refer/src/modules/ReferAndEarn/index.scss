@@ -1,0 +1,227 @@
+.RAE-container {
+  margin-top: 2rem;
+
+  .RAE-top {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-family);
+
+    .RAE-card-grid {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      row-gap: 1rem;
+      height: auto;
+      width: 30.3rem;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 25px 5px #eee;
+
+      .grid-item {
+        padding: 1rem;
+        margin-left: 1rem;
+        .RE {
+          color: var(--violet);
+          font-size: 0.875rem;
+          font-weight: 400;
+        }
+        .amount {
+          font-weight: 500;
+          font-size: 2rem;
+        }
+      }
+
+      .grid-item-4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .grid-Btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 180px;
+          height: 40px;
+          background: var(--violet);
+          border-radius: 20px;
+
+          .grid-Btn-txt {
+            color: white;
+            font-family: var(--font-family);
+          }
+        }
+      }
+    }
+
+    .RAE-ref-code {
+      width: 358px;
+      height: 105px;
+      color: var(--violet);
+      font-family: var(--font-family);
+      margin-right: 4rem;
+      padding: 2rem;
+
+      .RAE-txt {
+        font-size: 24px;
+        font-weight: 600;
+        padding-bottom: 5px;
+      }
+
+      .RAE-code-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 358px;
+        height: 60px;
+        background: white;
+        border: 1.2px solid transparent;
+        border-radius: 10px;
+        background: linear-gradient(to right, white, white),
+          var(--gradient-color);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+
+        div {
+          letter-spacing: 1.7rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .RAE-middle {
+    margin-top: 40px;
+    width: 85%;
+    min-height: 232px;
+    font-family: var(--font-family);
+    .RAE-middle-head {
+      font-weight: 600;
+      font-size: 24px;
+      color: var(--violet);
+    }
+    .RAE-middle-item-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .RAE-middle-item {
+        margin: 1rem;
+        display: flex;
+        .image-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 2rem;
+          width: 2rem;
+          border-radius: 50%;
+          padding: 1rem;
+          background: rgb(239, 238, 238);
+        }
+        .RAE-middle-text {
+          width: 380px;
+          padding-left: 20px;
+          .RAE-middle-text-bold {
+            font-weight: 500;
+            font-size: 14px;
+          }
+          .RAE-middle-text-normal {
+            font-weight: 400;
+            font-size: 16px;
+            color: var(--gray);
+          }
+        }
+      }
+    }
+  }
+  .RAE-Link {
+    margin: 1.8rem 0rem 1.8rem 0rem;
+    .link {
+      text-decoration: none;
+      cursor: pointer;
+      font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--violet);
+    }
+  }
+  .terms-container {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--violet);
+    .terms {
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .RAE-container {
+    width: 100%;
+    height: 100%;
+
+    .RAE-top {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+
+      .RAE-card-grid {
+        padding: 1.5rem;
+        width: auto;
+
+        .grid-item {
+          width: 45%;
+          padding: 0;
+          margin-left: 0.5rem;
+        }
+
+        .grid-item-4 {
+          display: flex;
+          align-items: flex-end;
+          height: 4rem;
+          width: auto;
+
+          .grid-Btn {
+            padding: 0 1rem;
+            width: fit-content;
+          }
+        }
+      }
+
+      .RAE-ref-code {
+        width: 100%;
+        margin: 2rem 0 0 0;
+        padding: 0;
+
+        .RAE-code-container {
+          width: 100%;
+        }
+      }
+    }
+
+    .RAE-middle {
+      height: auto;
+      width: 100%;
+
+      .RAE-middle-item-container {
+        .RAE-middle-item {
+          width: 100%;
+          margin: 1rem 0;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .RAE-Link{
+    margin-top: 2rem;
+  }
+}
+
+// @media screen and (max-width: 1300px) {
+//   .RAE-card-grid {
+//     .grid-item-4 {
+//       width: auto;
+//       height: 3rem;
+//     }
+//   }
+// }

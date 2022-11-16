@@ -1,0 +1,29 @@
+import "./index.scss";
+
+const Card = ({ data }) => {
+  return (
+    <div className="card">
+      <div className="card-name-date">
+        <div className="name">{data.name}</div>
+        <div className="date">{data.date}</div>
+      </div>
+      <div className="courses-enrolled">
+        Courses Enrolled({data.courses.length})
+      </div>
+
+      <div className="course-wrap">
+        {data.courses.map((i) => (
+          <div className="courses-container">
+            <div className="course">{i}</div>
+          </div>
+        ))}
+      </div>
+
+      <div className="amount">
+        Referral Amount <span>₹{data.amount}</span>{" "}
+      </div>
+    </div>
+  );
+};
+
+export default Card;
