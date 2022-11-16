@@ -18,7 +18,7 @@
       box-shadow: 0 0 25px 5px #eee;
 
       .grid-item {
-        padding: 1rem;
+        padding: 1.5rem;
         margin-left: 1rem;
         .RE {
           color: var(--violet);
@@ -26,6 +26,10 @@
           font-weight: 400;
         }
         .amount {
+          font-weight: 500;
+          font-size: 2rem;
+        }
+        .amount-7{
           font-weight: 500;
           font-size: 2rem;
         }
@@ -166,7 +170,7 @@
       align-items: center;
 
       .RAE-card-grid {
-        padding: 1.5rem;
+        padding: .5rem;
         width: auto;
 
         .grid-item {
@@ -177,12 +181,13 @@
 
         .grid-item-4 {
           display: flex;
-          align-items: flex-end;
-          height: 4rem;
-          width: auto;
+          align-items: flex-start;
+          height: 2rem;
+          width:fit-content;
+          font-size: .85rem;
 
           .grid-Btn {
-            padding: 0 1rem;
+            padding: 0 0.5rem;
             width: fit-content;
           }
         }
