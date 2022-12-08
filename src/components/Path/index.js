@@ -1,18 +1,31 @@
 import styled from "styled-components";
-import { useParams } from "react-router-dom";
-
+import { useLocation } from "react-router-dom";
 const Path = () => {
-const {routeName}= useParams()
+const path = useLocation();
+let pathnames=''
+const getPath=()=>{
+  const name = path.pathname;
+  if(name=="/enrolled-friends"){
+    pathnames=' > Enrolled friends'
+  }else{
+    pathnames=''
+  }
+  console.log(pathnames)
+}
+getPath()
+
   return (
     <Wrap>
-      <Font>UI/UX {">"} Refer & Earn{routeName} </Font>
+      <Font>
+        UI/UX {">"} Refer & Earn{pathnames}
+      </Font>
     </Wrap>
   );
 };
 
 export default Path;
 const Wrap = styled.div`
-  margin-left:8rem;
+  margin-left: 8rem;
   h3 {
     font-size: 15px;
     font-family: "Poppins", sans-serif;

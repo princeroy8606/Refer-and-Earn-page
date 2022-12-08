@@ -7,12 +7,14 @@ import backArrow from "../../../assets/icons/back.svg";
 const EnrolledFriends = () => {
   const data = [
     {
+      id:'1',
       name: "Dhiraj Saxsena",
       date: "14 Sep, 2022",
       courses: ["UI/UX", "Photoshop", "Illustrator", "Python", "MERN", "Java"],
       amount: 185,
     },
     {
+      id:'2',
       name: "Subhash Mishra",
       date: "15 Sep, 2022",
       courses: [
@@ -27,6 +29,7 @@ const EnrolledFriends = () => {
       amount: 255,
     },
     {
+      id:'3',
       name: "Prafull Kumar",
       date: "16 Sep, 2022",
       courses: [
@@ -69,10 +72,10 @@ const EnrolledFriends = () => {
         <div className="card-head">
           Friends who enrolled <span>({data.length})</span>
         </div>
-        <div className="card-wrap">
+      <div className="card-wrap">
           {/* <div className="card-slider"> */}
             {data.map((cardData) => (
-              <Card data={cardData} />
+              <Card  data={cardData}   />
             ))}
           {/* </div> */}
         </div>

@@ -1,10 +1,12 @@
 import "./index.scss";
 
 const Card = ({ data }) => {
+  console.log(data.id)
+
   return (
-    <div className="card">
+    <div className="card"key={data.id}>
       <div className="card-name-date">
-        <div className="name">{data.name}</div>
+        <div className="name" key={data.id}>{data.name} </div>
         <div className="date">{data.date}</div>
       </div>
       <div className="courses-enrolled">

@@ -8,6 +8,7 @@ import wallet from "../../assets/icons/Account balance wallet.svg";
 
 
 const ReferAndEarn = () => {
+
   return (
     <div className="RAE-container">
       <div className="RAE-top">
